@@ -1,7 +1,6 @@
-import React from "react";
 import Add from "./testComponent";
 
-function TestComponent() {
+export default function TestComponent() {
   const result = Add(2, 3);
   return (
     <div>
@@ -10,5 +9,3 @@ function TestComponent() {
     </div>
   );
 }
-
-export default TestComponent;
