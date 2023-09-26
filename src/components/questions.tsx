@@ -22,7 +22,7 @@ export default function Questions() {
     <div>
       <h2>{currentQuestion?.question}</h2>
       <input type="text" value={userAnswer} onChange={(e) => setUserAnswer(e.target.value)} />
-      <button onClick={handleSubmit}></button>
+      <button onClick={handleSubmit}>Submit Button</button>
     </div>
   )
 }
