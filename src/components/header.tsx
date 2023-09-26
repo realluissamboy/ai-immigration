@@ -1,3 +1,7 @@
 export default function Header() {
-  return <h1 className="text-rose-500		">This is a header</h1>
+  return (
+    <div>
+      <h1 className="text-rose-500 text-xs italic	">This is a header</h1>
+    </div>
+  )
 }
