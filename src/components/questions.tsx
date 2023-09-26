@@ -1,7 +1,17 @@
-export default function Header() {
+import { useState, useEffect } from 'react'
+import civicsQuestions from '../data/questions'
+
+export default function Questions() {
+  const [currentQuestion, setCurrentQuestion] = useState<string>('The current question is...')
+
+  useEffect(() => {
+    const randomIndex = Math.floor(Math.random() * civicsQuestions.length)
+    setCurrentQuestion(civicsQuestions[randomIndex].question)
+  }, [])
+
   return (
     <div>
-      <h1 className="text-rose-500 text-xs italic	">This is a header</h1>
+      <p>{currentQuestion}</p>
     </div>
   )
 }
