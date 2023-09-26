@@ -1,7 +1,11 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import TestComponent from "./textComponent";
 
 export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hola mundo!</h1>;
+  return (
+    <div>
+      <h1 className="text-3xl font-bold underline">Hola mundo!</h1>
+      <TestComponent />
+    </div>
+  );
 }
