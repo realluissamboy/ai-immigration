@@ -25,6 +25,7 @@ export default function App() {
       <h2>{currentQuestion?.question}</h2>
       <input type="text" value={userAnswer} onChange={(e) => setUserAnswer(e.target.value)} />
       <button onClick={handleSubmit}>Submit Button</button>
+      {/* <FeedbackComponent userAnswer={userAnswer} /> */}
       <FeedbackComponent />
     </div>
   )

@@ -1,13 +1,7 @@
-// interface FeedbackComponentProps {
-//   currentQuestion: {
-//     question: string
-//     answer: string
-//   } | null
-//   userAnswer: string
+// interface UserAnswer {
+//   answer: string;
 // }
 
-const FeedbackComponent = () => {
-  return <p>Hello Feedback Component</p>
+export default function FeedbackComponent() {
+  return <div>Hello Feedback Component</div>
 }
-
-export default FeedbackComponent
