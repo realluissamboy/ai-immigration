@@ -1,7 +1,9 @@
-// interface UserAnswer {
-//   answer: string;
-// }
+interface FeedbackComponentProps {
+  userAnswer: string
+}
 
-export default function FeedbackComponent() {
+const FeedbackComponent: React.FC<FeedbackComponentProps> = ({ userAnswer }) => {
   return <div>Hello Feedback Component</div>
 }
+
+export default FeedbackComponent
